@@ -144,7 +144,7 @@ figcaption { margin-top: 12px; }
 }
 .portada-cota { width: calc(100% - 2 * var(--margen)); margin-top: 3.2em; }
 /* La imagen parte de la cota y se funde en el fondo, donde va la frase */
-.portada-loft { position: relative; width: calc(100% - 2 * var(--margen)); margin-top: -4px; }
+.portada-loft { position: relative; width: calc(100% - 2 * var(--margen)); margin-top: -2px; }
 .portada-loft img {
   width: 100%; height: auto; aspect-ratio: 32 / 9; object-fit: cover;
   /* fundido abajo, el mismo largo (28 %) que la entrada de la sala que sigue */
