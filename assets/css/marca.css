@@ -11,6 +11,10 @@
   --obra-gris: #66625C;   /* texto secundario y filetes sobre estuco, 3 % */
   --oliva: #414222;       /* detalles menores: etiquetas sobre estuco, sellos de estado, 2 % */
 
+  /* Tema claro de la web (v1.1) */
+  --papel: #F8F5F0;           /* estuco luminoso: las zonas claras en el tema claro */
+  --laton-profundo: #86591E;  /* texto dorado pequeño sobre claro: 4,95 sobre estuco, 5,6 sobre papel */
+
   /* Tipografía: una familia, dos voces */
   --serif: "Instrument Serif", "Didot", "Bodoni 72", Georgia, serif;
   --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;

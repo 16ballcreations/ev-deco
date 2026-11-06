@@ -1,0 +1,104 @@
+{
+  "_nota": "Proyectos de la web. Solo lo que se ve en las publicaciones de @ev.decointeriorismo; null = por confirmar con el cliente (se muestra como pendiente). Cada imagen dice si es render o foto real. Después de editar: node herramientas/construir.mjs",
+  "proyectos": [
+    {
+      "slug": "sala-comedor-abierta",
+      "nombre": "Sala comedor abierta",
+      "tipo": "Antes y después",
+      "resumen": "Una sala oscura y cerrada que se abre al comedor, con luz cálida y un solo color de acento.",
+      "instagram": "https://www.instagram.com/p/DbWI41WRLYM/",
+      "comparar": {
+        "antes": { "src": "antes-sala-tv.jpg", "w": 296, "h": 310, "alt": "Antes, foto real: sala con sofás azul oscuro, televisor de tubo y piso blanco" },
+        "despues": { "src": "despues-sala-tv.jpg", "w": 296, "h": 310, "alt": "Después, render: sala abierta al comedor con sofá claro, butaca oliva y luz cálida" }
+      },
+      "portada": { "src": "despues-sala-tv.jpg", "w": 296, "h": 310, "alt": "Render de una sala abierta al comedor con sofá claro y luz cálida", "rotulo": "Render · El después" },
+      "ficha": { "ubicacion": null, "alcance": "Diseño y render", "anio": null, "area": null },
+      "titular": "De una sala cerrada a un espacio que se <em>abre</em>.",
+      "texto": [
+        "El antes es una foto real: sofás azul oscuro, televisor de tubo y piso blanco. El después es el render que se propuso: la sala se abre al comedor, el sofá se aclara y la luz se vuelve cálida.",
+        "Desliza para comparar. Misma posición de cámara y mismo encuadre, para que el cambio se lea de un vistazo."
+      ],
+      "galeria": [
+        { "src": "antes-sala-tv.jpg", "w": 296, "h": 310, "alt": "Foto real del antes: sala con sofás azul oscuro", "rotulo": "Foto real · El antes" },
+        { "src": "despues-sala-tv.jpg", "w": 296, "h": 310, "alt": "Render del después: sala comedor clara", "rotulo": "Render · El después" },
+        { "pendiente": "Foto real del espacio terminado" }
+      ]
+    },
+    {
+      "slug": "sala-vista-montana",
+      "nombre": "Sala con vista a la montaña",
+      "tipo": "Render",
+      "resumen": "Sofá color estuco, butacas oliva y un ventanal que convierte la montaña en el cuadro principal.",
+      "instagram": "https://www.instagram.com/p/DcRXfbKEbMZ/",
+      "portada": { "src": "sala-cerros.jpg", "w": 640, "h": 421, "alt": "Render de una sala con sofá en L color estuco, dos butacas verde oliva, lámparas de vidrio ahumado y chimenea en mármol oscuro, con ventanal hacia la montaña", "rotulo": "Render · Sala" },
+      "ficha": { "ubicacion": null, "alcance": "Diseño y render", "anio": null, "area": null },
+      "titular": "Una sala que mira a la <em>montaña</em>.",
+      "texto": [
+        "Sofá en L color estuco, dos butacas verde oliva, lámparas de vidrio ahumado y una chimenea en mármol oscuro. Nada compite con el ventanal.",
+        "Es un render: así ves tu espacio antes de construirlo, con los materiales y la luz que va a tener."
+      ],
+      "galeria": [
+        { "src": "sala-cerros.jpg", "w": 640, "h": 421, "alt": "Render de la sala con vista a la montaña", "rotulo": "Render · Sala" },
+        { "pendiente": "Más vistas del render" },
+        { "pendiente": "Foto real del espacio terminado" }
+      ]
+    },
+    {
+      "slug": "loft-doble-altura",
+      "nombre": "Loft de doble altura",
+      "tipo": "Render",
+      "resumen": "Concreto a la vista, una biblioteca que sube hasta el techo y un ventanal hacia la ciudad.",
+      "instagram": "https://www.instagram.com/p/DcZjWESPYa-/",
+      "portada": { "src": "loft-horizontal.jpg", "w": 1083, "h": 600, "alt": "Render de un loft de doble altura con biblioteca en madera, palma, sofás color arena y ventanal hacia la ciudad", "rotulo": "Render · Loft" },
+      "ficha": { "ubicacion": null, "alcance": "Diseño y render", "anio": null, "area": null },
+      "titular": "Doble altura, concreto y <em>luz</em>.",
+      "texto": [
+        "Muros de concreto a la vista, una biblioteca en madera que sube hasta el techo y un ventanal de piso a techo hacia la ciudad. Sofás color arena y una butaca oscura para leer junto a la ventana.",
+        "Es un render: el proyecto completo en imagen antes de poner el primer ladrillo."
+      ],
+      "galeria": [
+        { "src": "loft-concreto.jpg", "w": 361, "h": 414, "alt": "Render del loft completo, con la doble altura y el muro de concreto", "rotulo": "Render · Vista completa" },
+        { "src": "loft-cuadro.jpg", "w": 361, "h": 361, "alt": "Render de la zona de sofás del loft frente al ventanal", "rotulo": "Render · Zona de estar" },
+        { "pendiente": "Foto real del espacio terminado" }
+      ]
+    },
+    {
+      "slug": "sala-luz-indirecta",
+      "nombre": "Sala con luz indirecta",
+      "tipo": "Render · Opción 3",
+      "resumen": "La tercera opción de una sala: elegante y funcional, con techo de luz indirecta y madera.",
+      "instagram": "https://www.instagram.com/p/DZc-wipO5R0/",
+      "portada": { "src": "sala-opcion-3-limpia.jpg", "w": 361, "h": 271, "alt": "Render de una sala con lámpara de anillos, techo con luz indirecta y mueble de televisión en madera", "rotulo": "Render · Opción 3" },
+      "ficha": { "ubicacion": null, "alcance": "Diseño y render, con opciones", "anio": null, "area": null },
+      "titular": "La tercera opción: elegante y <em>funcional</em>.",
+      "texto": [
+        "Del mismo espacio se proponen varias opciones para que elijas viendo. Esta es la tercera: techo con luz indirecta, lámpara de anillos, mueble de televisión en madera y un sofá claro.",
+        "Elegir entre renders es más fácil que imaginar sobre un plano, y cuesta menos cambiar de idea antes de construir."
+      ],
+      "galeria": [
+        { "src": "sala-opcion-3-limpia.jpg", "w": 361, "h": 271, "alt": "Render de la opción 3 de la sala", "rotulo": "Render · Opción 3" },
+        { "pendiente": "Opciones 1 y 2" },
+        { "pendiente": "Foto real del espacio terminado" }
+      ]
+    },
+    {
+      "slug": "de-obra-gris-a-hogar",
+      "nombre": "De obra gris a hogar",
+      "tipo": "Obra en curso · foto real",
+      "resumen": "Así se ve la obra por dentro: el equipo instalando porcelanato en un apartamento nuevo.",
+      "instagram": "https://www.instagram.com/p/DdZ5EqcmML1/",
+      "portada": { "src": "obra-equipo.jpg", "w": 640, "h": 640, "alt": "Foto real del equipo de EV DecoInteriorismo con uniforme instalando porcelanato en un apartamento", "rotulo": "Foto real · Obra en curso" },
+      "ficha": { "ubicacion": null, "alcance": "De obra gris a hogar", "anio": null, "area": null },
+      "titular": "Así se ve la obra por <em>dentro</em>.",
+      "texto": [
+        "Foto real del equipo instalando porcelanato de 60 × 120 cm en un apartamento. La protección del piso lleva impresa la frase de la marca: «Lo profesional cuesta menos de lo que imaginas».",
+        "Cuando el proyecto termine, aquí van el render del diseño y las fotos del espacio entregado."
+      ],
+      "galeria": [
+        { "src": "obra-equipo.jpg", "w": 640, "h": 640, "alt": "Foto real de la obra con cajas de porcelanato de 60 × 120 cm", "rotulo": "Foto real · Obra en curso" },
+        { "pendiente": "Render del diseño" },
+        { "pendiente": "Foto real del espacio entregado" }
+      ]
+    }
+  ]
+}

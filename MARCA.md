@@ -110,6 +110,13 @@ derecha, 8 % del lado corto, 70 % de opacidad). Archivo: `assets/img/marca/sello
   titulares ≥ 32 px.
 - Obra gris sobre antracita 3,1: solo filetes y elementos gráficos, no texto.
 
+**Tema claro de la web** (v1.1): la página ofrece una variante iluminada con un botón en el
+menú. No cambia el diseño: las zonas oscuras pasan a estuco con texto antracita, y las zonas
+claras a **papel** (`--papel` #F8F5F0). El texto dorado pequeño usa **latón profundo**
+(`--laton-profundo` #86591E: 4,95 sobre estuco, 5,6 sobre papel; estuco sobre él, 4,95). El
+latón normal sigue para la cota, los íconos y la palabra que se inclina en titulares grandes.
+Las tarjetas oscuras sobre zonas claras siguen oscuras. El oscuro es el tema de base.
+
 **El botón:** píldora estuco con texto antracita en hojas oscuras, píldora antracita con
 texto estuco en hojas claras (15,2, AAA); a la derecha, un círculo de latón con la flecha
 en antracita (gráfico, 4,3). El latón no lleva texto encima: antracita sobre latón da 4,3
@@ -252,7 +259,7 @@ el perfil de la marca (van en historias o en perfiles personales).
 
 ## Archivos
 
-- `assets/css/marca.css`: tokens de color, tipografía, retícula y la cota.
+- `assets/css/marca.css`: tokens de color (incluidos papel y latón profundo del tema claro), tipografía, retícula y la cota.
 - `assets/img/marca/logotipo.svg`: logotipo para fondo antracita.
 - `assets/img/marca/logotipo-claro.svg`: logotipo para fondo estuco.
 - `assets/img/marca/sello.svg`: sello (avatar, marca de agua).
@@ -263,4 +270,4 @@ el perfil de la marca (van en historias o en perfiles personales).
 ## Cambios
 
 - v1.0 · noviembre 2026 · Primera versión (16 Ball Creations).
-- v1.1 · 6 nov 2026 · Monograma en círculo para el menú y el favicon. La página web sigue la estructura visual de la referencia (interior-st-wbs.framer.website) con las fuentes y colores de esta guía.
+- v1.1 · 6 nov 2026 · Monograma en círculo para el menú y el favicon. La página web sigue la estructura visual de la referencia (interior-st-wbs.framer.website) con las fuentes y colores de esta guía. Páginas internas (proyectos con detalle, servicios, nosotros, ideas, contacto) y tema claro con papel y latón profundo.

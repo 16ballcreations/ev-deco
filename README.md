@@ -31,17 +31,39 @@ La página sigue la **estructura visual** de la referencia que eligió 16 Ball
 | 8 | Preguntas | Acordeón en mayúsculas |
 | 9 | Pie | La frase, tres columnas, botón dorado y cinta de imágenes en movimiento |
 
-## Archivos
+## Páginas internas
+
+Como en la referencia: Proyectos (listado y una página de detalle por proyecto), Servicios,
+Nosotros, Ideas (en lugar del blog: notas que enlazan a sus publicaciones de Instagram) y
+Contacto (el formulario arma el mensaje y lo abre en WhatsApp; no guarda datos).
+
+**Lo que falta del cliente se ve como pendiente** (recuadro punteado «Por confirmar»), nunca
+se inventa: ubicación, año y área de cada proyecto, fotos reales del terminado, testimonios,
+historia y equipo, correo con dominio propio.
+
+**Tema claro / oscuro:** botón en el menú; se recuerda en el navegador del visitante. Ver
+«Tema claro de la web» en MARCA.md.
+
+## Cómo se edita
+
+Las páginas se **generan**; no se editan los `index.html` a mano.
+
+```bash
+node herramientas/construir.mjs
+```
 
 | Ruta | Qué es |
 |---|---|
-| `index.html` | La página |
+| `fuente/marco.html` | `<head>`, menú y pie compartidos |
+| `fuente/paginas/*.html` | El cuerpo de inicio, servicios, nosotros, ideas y contacto |
+| `fuente/proyectos.json` | Los proyectos: de aquí salen el listado y cada detalle (`null` = por confirmar) |
+| `index.html`, `proyectos/`, `servicios/`, `nosotros/`, `ideas/`, `contacto/` | Generados |
 | `marca/` | Manual de marca visual (doce secciones) |
 | `MARCA.md` | La guía en texto; manda sobre el manual |
 | `assets/css/marca.css` | Tokens de color, tipografía y la cota |
-| `assets/css/sitio.css` | Estilos de la página |
-| `assets/js/sitio.js` | Cotas, apariciones, menú y comparador |
-| `assets/img/marca/` | Logotipo (oscuro y claro), sello y el logo actual como referencia |
+| `assets/css/sitio.css` | Estilos de todas las páginas, con el tema claro |
+| `assets/js/sitio.js` | Cotas, apariciones, menú, comparador, proceso, servicios, formulario y tema |
+| `assets/img/marca/` | Logotipo, sello, monograma en círculo (en curvas) y el logo actual como referencia |
 | `assets/img/web/` | Imágenes del Instagram del cliente, recortadas y rotuladas (render / foto real) |
 | `herramientas/servir.mjs` | Servidor local: `node herramientas/servir.mjs 4350` |
 

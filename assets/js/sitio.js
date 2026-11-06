@@ -6,7 +6,7 @@
   // 1. Cotas y apariciones: una sola vez, al entrar en pantalla. La portada entra al cargar.
   const cotas = document.querySelectorAll('.cota');
   const apariciones = document.querySelectorAll('.aparece');
-  const portada = document.querySelector('.portada');
+  const portada = document.querySelector('.portada, .cabecera') || document.createElement('div');
   if (quieto || !hayVigia) {
     cotas.forEach((c) => c.classList.add('trazada'));
     apariciones.forEach((a) => a.classList.add('visto'));
@@ -34,7 +34,7 @@
     });
   }
 
-  // 2. Menú: fondo al bajar, se esconde al seguir bajando y vuelve al subir; enlace activo
+  // 2. Menú: fondo al bajar, se esconde al seguir bajando y vuelve al subir
   const menu = document.querySelector('[data-menu]');
   const abrir = document.querySelector('.menu-abrir');
   const movil = document.getElementById('menu-movil');
@@ -66,22 +66,6 @@
   });
   movil.querySelectorAll('a').forEach((a) => a.addEventListener('click', cerrar));
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !movil.hidden) { cerrar(); abrir.focus(); } });
-
-  if (hayVigia) {
-    const enlaces = [...document.querySelectorAll('.menu-enlaces a')];
-    const zonas = enlaces.map((a) => document.querySelector(a.hash)).filter(Boolean);
-    const lector = new IntersectionObserver((entradas) => {
-      entradas.forEach((e) => {
-        if (!e.isIntersecting) return;
-        enlaces.forEach((a) => {
-          const activo = a.hash === '#' + e.target.id;
-          a.classList.toggle('activo', activo);
-          if (activo) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    zonas.forEach((z) => lector.observe(z));
-  }
 
   // 3. Comparador: al entrar en pantalla, el corte barre del antes al después una vez
   document.querySelectorAll('[data-comparar]').forEach((marco) => {
@@ -146,4 +130,41 @@
     servicios.querySelectorAll('[data-paso]').forEach((b) => b.addEventListener('click', () => ir(actual + Number(b.dataset.paso))));
     ir(0);
   }
+
+  // 6. Contacto: el formulario arma el mensaje y lo abre en WhatsApp (no se envía a ningún servidor)
+  const formulario = document.querySelector('[data-formulario]');
+  if (formulario) {
+    const error = formulario.querySelector('.formulario-error');
+    formulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!formulario.checkValidity()) { error.hidden = false; formulario.querySelector(':invalid').focus(); return; }
+      error.hidden = true;
+      const d = new FormData(formulario);
+      const texto = `Hola, soy ${d.get('nombre')}. Quiero cotizar: ${d.get('servicio')}. Zona: ${d.get('zona')}.
+
+${d.get('mensaje')}`;
+      window.open('https://wa.me/573204980360?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+    });
+  }
+
+  // 7. Tema claro / oscuro: se guarda en este navegador
+  const botonTema = document.querySelector('[data-tema-boton]');
+  const colorBarra = document.querySelector('meta[name="theme-color"]');
+  const pintarTema = () => {
+    const claro = document.documentElement.dataset.tema === 'claro';
+    if (botonTema) {
+      botonTema.setAttribute('aria-label', claro ? 'Cambiar a tema oscuro' : 'Cambiar a tema claro');
+      botonTema.setAttribute('aria-pressed', String(claro));
+    }
+    if (colorBarra) colorBarra.content = claro ? '#EEE7DF' : '#111317';
+  };
+  if (botonTema) {
+    botonTema.addEventListener('click', () => {
+      const claro = document.documentElement.dataset.tema !== 'claro';
+      if (claro) document.documentElement.dataset.tema = 'claro'; else delete document.documentElement.dataset.tema;
+      try { localStorage.setItem('ev-tema', claro ? 'claro' : 'oscuro'); } catch (e) {}
+      pintarTema();
+    });
+  }
+  pintarTema();
 })();
