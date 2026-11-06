@@ -6,6 +6,7 @@
 // {{raiz}} se cambia por la ruta relativa a la raíz del sitio según la profundidad de la página.
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const raizSitio = fileURLToPath(new URL('..', import.meta.url));
@@ -178,8 +179,30 @@ for (const archivo of (await readdir(join(fuente, 'paginas'))).filter((f) => f.e
 salidas.push(listado());
 proyectos.forEach((p, i) => salidas.push(detalle(p, i)));
 
+// Versiones: cada CSS, JS e imagen local lleva ?v=<huella de su contenido>. Si el archivo cambia,
+// cambia la dirección y el navegador no muestra la copia vieja de su caché.
+const huellas = new Map();
+async function versionar(html, carpeta) {
+  const refs = [...html.matchAll(/(href|src)="([^"#?:]+\.(?:css|js|jpg|jpeg|png|svg|webp))(?:\?v=[^"]*)?"/g)];
+  for (const [entero, attr, rel] of refs) {
+    const archivo = join(carpeta, rel);
+    if (!huellas.has(archivo)) {
+      try { huellas.set(archivo, createHash('sha1').update(await readFile(archivo)).digest('hex').slice(0, 8)); }
+      catch { huellas.set(archivo, null); console.warn('  ! no existe', rel, 'en', carpeta.slice(raizSitio.length)); }
+    }
+    const v = huellas.get(archivo);
+    if (v) html = html.replace(entero, `${attr}="${rel}?v=${v}"`);
+  }
+  return html;
+}
+
 for (const { ruta, html } of salidas) {
   await mkdir(dirname(ruta), { recursive: true });
-  await writeFile(ruta, html);
+  await writeFile(ruta, await versionar(html, dirname(ruta)));
   console.log('·', ruta.slice(raizSitio.length));
 }
+
+// El manual no se genera, pero sus enlaces también llevan versión
+const manual = join(raizSitio, 'marca', 'index.html');
+await writeFile(manual, await versionar(await readFile(manual, 'utf8'), dirname(manual)));
+console.log('·', manual.slice(raizSitio.length), '(versiones)');
