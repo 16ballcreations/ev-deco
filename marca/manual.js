@@ -36,11 +36,10 @@
         a.classList.toggle('activo', activo);
         if (activo) {
           a.setAttribute('aria-current', 'true');
-          // en móvil el índice es una fila: lleva el enlace activo a la vista
+          // en móvil el índice es una fila: lleva el enlace activo a la vista. Sin animación propia:
+          // un desplazamiento suave aquí interrumpe en Chrome el desplazamiento suave de la página.
           const fila = a.closest('nav');
-          if (fila && fila.scrollWidth > fila.clientWidth) {
-            fila.scrollTo({ left: a.offsetLeft - 24, behavior: quieto ? 'auto' : 'smooth' });
-          }
+          if (fila && fila.scrollWidth > fila.clientWidth) fila.scrollLeft = a.offsetLeft - 24;
         } else {
           a.removeAttribute('aria-current');
         }
@@ -48,6 +47,24 @@
     }, { rootMargin: '-35% 0px -55% 0px', threshold: [0, 0.01, 0.5, 1] });
     document.querySelectorAll('main > section[id]').forEach((s) => lector.observe(s));
   }
+
+  // 2b. Enlaces internos (índice, portada, «ver sección»): el desplazamiento lo hace el script,
+  // descuenta la fila del índice en móvil y, si el navegador no llega, salta al final.
+  const alto = () => {
+    const indice = document.querySelector('.indice');
+    return indice && indice.getBoundingClientRect().width >= innerWidth - 1 ? indice.offsetHeight + 8 : 0;
+  };
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const destino = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+    if (!destino) return;
+    e.preventDefault();
+    const top = () => Math.max(0, destino.getBoundingClientRect().top + scrollY - alto());
+    history.pushState(null, '', a.hash);
+    scrollTo({ top: top(), behavior: quieto ? 'instant' : 'smooth' });
+    setTimeout(() => { if (Math.abs(destino.getBoundingClientRect().top - alto()) > 4) scrollTo({ top: top(), behavior: 'instant' }); }, 1400);
+  });
 
   // 3. Repetir el encendido en las demostraciones
   document.querySelectorAll('[data-reencender]').forEach((boton) => {

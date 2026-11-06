@@ -109,8 +109,9 @@ figcaption { margin-top: 12px; }
 }
 .menu.fijo { background: rgb(var(--fondo-rgb) / 0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 .menu.oculto { transform: translateY(-100%); }
-.menu-marca { display: block; color: var(--pulido); flex: none; }
-.monograma { width: 52px; height: 52px; }
+.menu-marca { display: block; color: var(--estuco); flex: none; }
+/* El sello (EV con la cota) sin su cuadro: el texto toma el color del tema, la cota va en latón */
+.sello { width: 50px; height: 51px; }
 .menu-enlaces { flex: 1; display: flex; justify-content: space-between; }
 .menu-enlaces a { text-decoration: none; transition: color 0.2s; }
 .menu-enlaces a::before { color: rgb(var(--tinta-rgb) / 0.5); }
@@ -131,7 +132,7 @@ figcaption { margin-top: 12px; }
   .menu-enlaces { display: none; }
   .tema { margin-left: auto; }
   .menu-abrir { display: block; }
-  .monograma { width: 44px; height: 44px; }
+  .sello { width: 42px; height: 43px; }
 }
 
 /* ---------- 1. Portada ---------- */

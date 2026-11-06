@@ -20,7 +20,7 @@ La página sigue la **estructura visual** de la referencia que eligió 16 Ball
 
 | # | Sección | Qué hace |
 |---|---|---|
-| 0 | Menú | Monograma EV en círculo y enlaces con «+» repartidos de lado a lado |
+| 0 | Menú | El sello (EV con la cota) y enlaces con «+» repartidos de lado a lado |
 | 1 | Portada | El nombre a todo lo ancho con la cota debajo, un cuadro pequeño, la frase de marca entre paréntesis y la sala a todo lo ancho |
 | 2 | Compromisos | Titular, anillo de imágenes que gira en 3D entre dos datos (05 compromisos · $0 la cotización) y los cinco compromisos |
 | 3 | Proyectos | Colección en tarjetas escalonadas; la primera es el antes y después con comparador |
@@ -63,7 +63,7 @@ node herramientas/construir.mjs
 | `assets/css/marca.css` | Tokens de color, tipografía y la cota |
 | `assets/css/sitio.css` | Estilos de todas las páginas, con el tema claro |
 | `assets/js/sitio.js` | Cotas, apariciones, menú, comparador, proceso, servicios, formulario y tema |
-| `assets/img/marca/` | Logotipo, monograma en círculo (SVG en curvas y PNG para favicon, iPhone y firma) y el logo actual como referencia |
+| `assets/img/marca/` | Logotipo, sello en curvas (SVG y PNG para favicon, iPhone y firma) y el logo actual como referencia |
 | `assets/img/web/` | Imágenes del Instagram del cliente, recortadas y rotuladas (render / foto real) |
 | `herramientas/servir.mjs` | Servidor local: `node herramientas/servir.mjs 4350` |
 
