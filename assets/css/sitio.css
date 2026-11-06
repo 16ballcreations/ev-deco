@@ -112,10 +112,17 @@ figcaption { margin-top: 12px; }
   letter-spacing: -0.035em; text-align: center; white-space: nowrap;
 }
 .portada-cota { width: calc(100% - 2 * var(--margen)); margin-top: 3.2em; }
-.portada-cuadro { width: clamp(120px, 13vw, 180px); margin: 40px 0 36px; }
-.portada-cuadro img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+/* La imagen parte de la cota y se funde en el fondo, donde va la frase */
+.portada-loft { position: relative; width: calc(100% - 2 * var(--margen)); margin-top: -4px; }
+.portada-loft img {
+  width: 100%; height: clamp(300px, 46vw, 660px); object-fit: cover; object-position: 50% 45%;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 30%, rgb(0 0 0 / 0.32) 64%, transparent 90%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 30%, rgb(0 0 0 / 0.32) 64%, transparent 90%);
+}
+.portada-loft figcaption { position: absolute; top: 18px; left: 18px; margin: 0; padding: 7px 12px; border-radius: var(--radio); background: rgb(17 19 23 / 0.78); color: var(--estuco); }
 .portada-frase {
-  position: relative; width: 100%; padding: 0 var(--margen);
+  position: relative; z-index: 1; width: 100%; max-width: 1180px; padding: 0 var(--margen);
+  margin-top: clamp(-220px, -13vw, -72px);
   display: grid; grid-template-columns: 56px minmax(0, 1fr) 56px; align-items: center; gap: 24px;
 }
 .frase { max-width: 22ch; margin: 0 auto; text-align: center; font: 400 clamp(1.75rem, 3.6vw, 3.25rem) / 1.08 var(--serif); letter-spacing: -0.01em; color: var(--estuco) !important; }
@@ -330,15 +337,7 @@ html:not(.js) .paso figure { transform: none; }
 }
 @media (max-width: 600px) { .pie-col:nth-child(n) { grid-column: 1 / -1; } }
 
-.cinta { margin-top: var(--seccion); border-block: 1px solid rgb(238 231 223 / 0.12); overflow: hidden; padding: 20px 0; }
-.cinta-giro { display: flex; align-items: center; gap: 40px; width: max-content; animation: cinta 40s linear infinite; }
-.cinta span { font: 400 clamp(2rem, 4vw, 3.5rem) / 1 var(--serif); white-space: nowrap; }
-.cinta em { font-style: italic; color: var(--laton); }
-.cinta img { width: auto; height: clamp(56px, 6vw, 88px); aspect-ratio: 4 / 3; object-fit: cover; }
-@keyframes cinta { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .cinta-giro { animation: none; } }
-
-.pie-abajo { padding-block: 32px 40px; row-gap: 12px; align-items: center; }
+.pie-abajo { margin-top: var(--seccion); padding-block: 32px 40px; row-gap: 12px; align-items: center; border-top: 1px solid rgb(238 231 223 / 0.12); }
 .pie-abajo .monograma { color: var(--pulido); width: 48px; height: 48px; }
 .pie-abajo .etiqueta { color: rgb(238 231 223 / 0.6); letter-spacing: 0.16em; }
 .pie-abajo a { color: var(--pulido); }
