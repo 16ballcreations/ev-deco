@@ -1,6 +1,6 @@
 # EV DecoInteriorismo — propuesta de marca y web
 
-**Estado: propuesta v1.0 (6 nov 2026), lista para mostrar al cliente. Con `noindex`.**
+**Estado: propuesta v1.1 (6 nov 2026), lista para mostrar al cliente. Con `noindex`.**
 
 Identidad y página web propuestas para **EV DecoInteriorismo & Render Studio SAS** (Bogotá,
 Cedritos): diseño de espacios, renders, remodelaciones y entrega de apartamentos en obra gris.
@@ -15,15 +15,21 @@ propio es **la cota**, la línea de medida de los planos: puntualidad y presupue
 En cada titular, una sola palabra en itálica y latón («la palabra que se inclina»). La identidad
 completa está en [MARCA.md](MARCA.md); el manual visual, en `marca/`.
 
+La página sigue la **estructura visual** de la referencia que eligió 16 Ball
+(https://interior-st-wbs.framer.website), con las fuentes, los colores y la cota de esta marca.
+
 | # | Sección | Qué hace |
 |---|---|---|
-| 1 | Portada | La frase de marca con la cota «A tu medida» y el render del loft |
-| 2 | Lo que prometemos | Sus cinco compromisos, en su orden |
-| 3 | Proyectos | Antes y después con comparador (barre solo una vez al entrar) y la sala con vista a la montaña |
-| 4 | Lo que hacemos | «De obra gris a hogar» destacado y los otros cinco servicios |
-| 5 | Cómo trabajamos | Nos cuentas · Lo ves · Lo entregamos, con foto real, render y obra |
-| 6 | Preguntas | Costo de la cotización, presupuesto, render, obra gris, tiempos y zona |
-| 7 | Contacto | Todo lleva a WhatsApp (320 498 0360) |
+| 0 | Menú | Monograma EV en círculo y enlaces con «+» repartidos de lado a lado |
+| 1 | Portada | El nombre a todo lo ancho con la cota debajo, un cuadro pequeño, la frase de marca entre paréntesis y la sala a todo lo ancho |
+| 2 | Compromisos | Titular, anillo de imágenes que gira en 3D entre dos datos (05 compromisos · $0 la cotización) y los cinco compromisos |
+| 3 | Proyectos | Colección en tarjetas escalonadas; la primera es el antes y después con comparador |
+| 4 | Proceso | La escena queda fija y cada tercio del recorrido muestra un paso (1/3, 2/3, 3/3) |
+| 5 | Obra gris | Titular, foto real de obra y tarjeta oscura con el botón a WhatsApp |
+| 6 | Servicios | Pantalla partida: la tarjeta del servicio cambia con flechas y la imagen grande con ella |
+| 7 | Acabados | Tres fotos y la lista numerada (porcelanato, drywall, pintura, enchape, iluminación) |
+| 8 | Preguntas | Acordeón en mayúsculas |
+| 9 | Pie | La frase, tres columnas, botón dorado y cinta de imágenes en movimiento |
 
 ## Archivos
 

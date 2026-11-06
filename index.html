@@ -7,7 +7,7 @@
 <meta name="description" content="Diseñamos y renovamos tu casa, apartamento u oficina en Bogotá. Ves tu espacio en render antes de construirlo y lo entregamos a tiempo, a la medida de tu presupuesto. Cotiza sin costo por WhatsApp.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#111317">
-<link rel="icon" href="assets/img/marca/sello.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/marca/monograma.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script>document.documentElement.classList.add('js')</script>
@@ -19,184 +19,266 @@
 <!-- Piezas de la marca, dibujadas una vez (ver MARCA.md) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="logo" viewBox="0 0 600 160">
-      <text x="0" y="132" font-family="Instrument Serif, Didot, Georgia, serif" font-size="168" letter-spacing="-14" textLength="158" lengthAdjust="spacingAndGlyphs" style="fill:var(--l-texto)">EV</text>
-      <text x="190" y="72" font-family="Instrument Serif, Didot, Georgia, serif" font-size="58" textLength="404" lengthAdjust="spacingAndGlyphs" style="fill:var(--l-texto)">DecoInteriorismo</text>
-      <g style="stroke:var(--laton)" stroke-width="1.5" fill="none"><path d="M192 96H592"/><path d="M188 100.5l8-9M588 100.5l8-9"/></g>
-      <text x="192" y="132" font-family="Instrument Sans, Helvetica, Arial, sans-serif" font-weight="500" font-size="15" textLength="236" lengthAdjust="spacing" style="fill:var(--l-texto);fill-opacity:var(--l-sub-op)">&amp; RENDER STUDIO</text>
+    <symbol id="monograma" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="56.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path fill="currentColor" d="M30.22 88Q29.02 88 29.02 87.12Q29.02 86.4 30.06 86.16L31.9 85.84Q33.58 85.52 34.1 84.96Q34.62 84.4 34.62 82.72V35.68Q34.62 34 34.1 33.44Q33.58 32.88 31.9 32.56L30.06 32.24Q29.02 32 29.02 31.28Q29.02 30.4 30.22 30.4H57.1Q58.94 30.4 59.1 32.24L59.74 45.52Q59.9 46.88 58.7 46.88Q57.74 46.88 57.58 45.84L57.1 42.88Q56.22 37.44 53.5 34.92Q50.78 32.4 45.98 32.4Q42.78 32.4 41.54 33.32Q40.3 34.24 40.3 36.56V55.84Q40.3 56.96 41.42 56.96H45.42Q48.94 56.96 49.74 53.2L50.54 49.2Q50.86 48 51.9 48.16Q52.78 48.32 52.78 49.52V67.52Q52.78 68.72 51.9 68.88Q50.86 69.04 50.54 67.84L49.74 63.92Q49.18 61.12 48.18 60.24Q47.18 59.36 45.34 59.36H41.42Q40.3 59.36 40.3 60.48V80.56Q40.3 83.44 41.78 84.72Q43.26 86 47.18 86Q51.18 86 54.02 83.96Q56.86 81.92 57.98 76.32L58.94 71.6Q59.18 70.56 60.14 70.56Q61.26 70.56 61.1 71.92L60.3 86.16Q60.14 88 58.3 88Z"/>
+      <path fill="currentColor" d="M70.78 91.82Q70.45 91.82 70.04 91.57Q69.63 91.33 69.47 90.51L56.51 38.52Q55.94 36.22 55.24 35.32Q54.54 34.42 52.9 34.09L51.67 33.85Q50.52 33.6 50.52 32.78Q50.52 31.96 51.75 31.96H65.78Q66.92 31.96 66.92 32.86Q66.92 33.76 65.53 33.85L63.97 34.01Q62.58 34.09 62.21 34.87Q61.84 35.65 62.25 37.45L71.76 76.9Q71.93 77.39 72.3 77.39Q72.66 77.39 72.75 76.9L82.18 39.18Q83.32 34.5 79.72 34.01L78.49 33.85Q77.09 33.6 77.09 32.86Q77.09 31.96 78.24 31.96H89.72Q90.95 31.96 90.95 32.78Q90.95 33.6 89.8 33.85L88.57 34.09Q87.01 34.42 86.15 35.69Q85.29 36.96 84.72 39.26L72.01 90.51Q71.84 91.33 71.47 91.57Q71.11 91.82 70.78 91.82Z"/>
     </symbol>
     <symbol id="flecha" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="flecha-diag" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
   </defs>
 </svg>
 
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-<!-- Menú -->
+<!-- Menú: monograma y enlaces repartidos de lado a lado -->
 <header class="menu" data-menu>
   <a class="menu-marca" href="#inicio" aria-label="EV DecoInteriorismo, inicio">
-    <span class="monograma" aria-hidden="true">EV</span>
-    <span class="menu-nombre">DecoInteriorismo</span>
+    <svg class="monograma" aria-hidden="true"><use href="#monograma"/></svg>
   </a>
   <nav class="menu-enlaces" aria-label="Secciones">
+    <a class="etiqueta activo" href="#inicio">Inicio</a>
     <a class="etiqueta" href="#proyectos">Proyectos</a>
+    <a class="etiqueta" href="#proceso">Proceso</a>
     <a class="etiqueta" href="#servicios">Servicios</a>
-    <a class="etiqueta" href="#proceso">Cómo trabajamos</a>
     <a class="etiqueta" href="#preguntas">Preguntas</a>
+    <a class="etiqueta" href="#contacto">Contacto</a>
   </nav>
-  <a class="boton boton-menu" href="https://wa.me/573204980360?text=Hola%2C%20quiero%20cotizar%20un%20espacio." target="_blank" rel="noopener">Cotiza sin costo<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha"/></svg></span></a>
   <button class="menu-abrir etiqueta" type="button" aria-expanded="false" aria-controls="menu-movil">Menú</button>
 </header>
 
 <nav class="menu-movil" id="menu-movil" aria-label="Secciones" hidden>
   <a href="#proyectos">Proyectos</a>
+  <a href="#proceso">Proceso</a>
   <a href="#servicios">Servicios</a>
-  <a href="#proceso">Cómo trabajamos</a>
   <a href="#preguntas">Preguntas</a>
   <a href="#contacto">Cotiza sin costo</a>
 </nav>
 
 <main id="contenido">
 
-  <!-- Portada -->
-  <section class="hoja oscuro portada" id="inicio">
-    <div class="reticula">
-      <div class="portada-texto">
-        <p class="etiqueta acento aparece">Interiorismo y renders · Bogotá</p>
-        <h1 class="display aparece">Lo profesional cuesta menos de lo que <em>imaginas</em>.</h1>
-        <span class="cota" data-medida aria-hidden="true"><span>A tu medida</span></span>
-        <p class="entrada aparece">Diseñamos y renovamos tu casa, apartamento u oficina. Ves tu espacio en render antes de construirlo, y lo entregamos a tiempo y dentro de lo acordado.</p>
-        <div class="acciones aparece">
-          <a class="boton" href="https://wa.me/573204980360?text=Hola%2C%20quiero%20cotizar%20un%20espacio." target="_blank" rel="noopener">Cotiza sin costo<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha"/></svg></span></a>
-          <a class="enlace etiqueta" href="#proyectos">Ver proyectos</a>
-        </div>
-      </div>
-      <figure class="portada-foto aparece">
-        <img src="assets/img/web/loft-concreto.jpg" width="361" height="414" alt="Render de un loft de doble altura con muros de concreto, biblioteca en madera, sofá color arena y ventanal hacia la ciudad" fetchpriority="high">
-        <figcaption class="etiqueta">Render · Loft de doble altura</figcaption>
-      </figure>
+  <!-- 1. Portada: el nombre a todo lo ancho, un cuadro, la frase entre paréntesis y la sala -->
+  <section class="portada" id="inicio">
+    <h1 class="portada-nombre aparece"><span class="oculto-visual">EV </span>DecoInteriorismo</h1>
+    <span class="cota portada-cota" data-medida aria-hidden="true"><span>Interiorismo y renders · Bogotá</span></span>
+    <figure class="portada-cuadro aparece">
+      <img src="assets/img/web/loft-cuadro.jpg" width="361" height="361" alt="Render de un loft de doble altura con muros de concreto y ventanal hacia la ciudad" fetchpriority="high">
+    </figure>
+    <div class="portada-frase">
+      <span class="parentesis" aria-hidden="true"></span>
+      <p class="frase aparece">«Lo profesional cuesta menos de lo que <em>imaginas</em>.»</p>
+      <span class="parentesis derecho" aria-hidden="true"></span>
     </div>
+    <figure class="portada-sala">
+      <img src="assets/img/web/sala-cerros.jpg" width="640" height="421" alt="Render de una sala con sofá en L color estuco, dos butacas verde oliva y ventanal hacia la montaña">
+      <figcaption class="etiqueta">Render · Sala con vista a la montaña</figcaption>
+    </figure>
   </section>
 
-  <!-- Compromisos -->
-  <section class="hoja claro" id="compromisos">
+  <!-- 2. Compromisos: titular, anillo de imágenes que gira y dos datos a los lados -->
+  <section class="hoja oscuro compromisos" id="compromisos">
     <div class="reticula">
-      <header class="seccion-cabeza">
-        <p class="etiqueta numero">01 — Lo que prometemos</p>
-        <h2 class="titular">Tu espacio, a tiempo y a tu <em>medida</em>.</h2>
-        <p class="entrada">Llegar a casa y que todo esté en su lugar. Para eso trabajamos con cinco compromisos que no cambian de un proyecto a otro, sea un baño o un apartamento entero.</p>
-      </header>
-      <ol class="compromisos">
-        <li class="aparece"><span class="etiqueta">01</span><h3>Puntualidad</h3><p>Te damos la fecha de entrega antes de empezar, y la cumplimos.</p></li>
-        <li class="aparece"><span class="etiqueta">02</span><h3>Confort</h3><p>Un espacio que se siente bien al llegar, no solo en la foto.</p></li>
-        <li class="aparece"><span class="etiqueta">03</span><h3>Estilo</h3><p>Pocas cosas, bien puestas. Elegimos contigo cada acabado.</p></li>
-        <li class="aparece"><span class="etiqueta">04</span><h3>A la medida de cualquier presupuesto</h3><p>Cuéntanos cuánto quieres invertir y diseñamos a partir de ahí.</p></li>
-        <li class="aparece"><span class="etiqueta">05</span><h3>Ideas frescas</h3><p>Te proponemos lo que no habías imaginado para tu espacio.</p></li>
-      </ol>
+      <h2 class="titular grande aparece">Tu espacio, a tiempo y a tu <em>medida</em>.</h2>
     </div>
-  </section>
-
-  <!-- Proyectos -->
-  <section class="hoja oscuro" id="proyectos">
-    <div class="reticula">
-      <header class="seccion-cabeza">
-        <p class="etiqueta numero">02 — Proyectos</p>
-        <h2 class="titular">Así se ve el <em>cambio</em>.</h2>
-        <p class="entrada">Te mostramos cómo llegó cada espacio y cómo va a quedar. Siempre te decimos qué es render y qué es foto real.</p>
-      </header>
-
-      <div class="proyecto-cambio">
-        <div class="comparar aparece" data-comparar>
-          <img src="assets/img/web/antes-sala-tv.jpg" width="296" height="310" alt="Antes, foto real: sala con sofás azul oscuro, televisor de tubo y piso blanco" loading="lazy">
-          <img class="despues" src="assets/img/web/despues-sala-tv.jpg" width="296" height="310" alt="Después, render: sala abierta al comedor con sofá claro, butaca oliva y luz cálida" loading="lazy">
-          <span class="marca a">Antes · foto real</span><span class="marca d">Después · render</span>
-          <span class="tirador" aria-hidden="true"><svg viewBox="0 0 22 16"><path d="M7 3 2 8l5 5M15 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
-          <input type="range" min="0" max="100" value="50" aria-label="Mover el corte entre el antes y el después">
-        </div>
-        <div class="proyecto-texto">
-          <span class="cota" data-medida aria-hidden="true"><span>Antes · después</span></span>
-          <h3 class="subtitulo">Una sala que se abre al comedor.</h3>
-          <p>El televisor de tubo y los sofás oscuros dan paso a una sala clara, con luz cálida y un solo color de acento. Desliza para ver el antes y el después.</p>
+    <div class="anillo-zona">
+      <div class="dato aparece"><strong>05</strong><span>Compromisos en cada proyecto</span></div>
+      <div class="anillo" aria-hidden="true">
+        <div class="anillo-giro">
+          <img src="assets/img/web/sala-cerros.jpg" alt="">
+          <img src="assets/img/web/obra-equipo.jpg" alt="">
+          <img src="assets/img/web/sala-opcion-3-limpia.jpg" alt="">
+          <img src="assets/img/web/despues-sala-tv.jpg" alt="">
+          <img src="assets/img/web/loft-concreto.jpg" alt="">
+          <img src="assets/img/web/cocina-antes.jpg" alt="">
+          <img src="assets/img/web/antes-sala-ventanal.jpg" alt="">
+          <img src="assets/img/web/loft-cuadro.jpg" alt="">
         </div>
       </div>
-
-      <div class="galeria">
-        <figure class="ancha aparece">
-          <img src="assets/img/web/sala-cerros.jpg" width="640" height="421" alt="Render de una sala con sofá en L color estuco, dos butacas verde oliva, lámparas de vidrio ahumado y chimenea en mármol oscuro, con ventanal hacia la montaña" loading="lazy">
-          <figcaption class="etiqueta">Render · Sala con vista a la montaña</figcaption>
-        </figure>
-        <div class="galeria-texto aparece">
-          <h3 class="subtitulo">Lo ves antes de construirlo.</h3>
-          <p>Cada proyecto empieza con un render como este. Lo miras, lo ajustas con nosotros y solo entonces se construye.</p>
-          <a class="enlace etiqueta" href="https://www.instagram.com/ev.decointeriorismo/" target="_blank" rel="noopener">Más proyectos en Instagram</a>
-        </div>
-      </div>
+      <div class="dato derecho aparece"><strong>$0</strong><span>Cuesta tu cotización</span></div>
     </div>
-  </section>
-
-  <!-- Servicios -->
-  <section class="hoja claro" id="servicios">
     <div class="reticula">
-      <header class="seccion-cabeza">
-        <p class="etiqueta numero">03 — Lo que hacemos</p>
-        <h2 class="titular">Del primer render a la <em>entrega</em>.</h2>
-      </header>
-
-      <article class="destacado aparece">
-        <p class="etiqueta">¿Te entregaron tu apartamento en obra gris?</p>
-        <h3 class="subtitulo">De obra gris a hogar.</h3>
-        <p>Recibes las llaves de un espacio sin acabados y nosotros lo terminamos contigo: pisos, paredes, cocina, baños e iluminación, con fecha de entrega desde el primer día.</p>
-        <a class="boton boton-antracita" href="https://wa.me/573204980360?text=Hola%2C%20me%20entregaron%20mi%20apartamento%20en%20obra%20gris." target="_blank" rel="noopener">Cuéntanos de tu apartamento<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha"/></svg></span></a>
-      </article>
-
-      <ul class="servicios">
-        <li class="aparece"><span class="etiqueta">01</span><h3>Diseño de espacios y renders</h3><p>Tu proyecto en imágenes fotorrealistas antes de construir, para que decidas viendo.</p></li>
-        <li class="aparece"><span class="etiqueta">02</span><h3>Remodelaciones</h3><p>Cocinas, baños, pisos e iluminación.</p></li>
-        <li class="aparece"><span class="etiqueta">03</span><h3>Restauraciones</h3><p>Devolverle la vida a lo que ya existe.</p></li>
-        <li class="aparece"><span class="etiqueta">04</span><h3>Acabados</h3><p>Revestimiento, drywall, pintura y enchape.</p></li>
-        <li class="aparece"><span class="etiqueta">05</span><h3>Asesorías</h3><p>Te acompañamos a decidir antes de invertir.</p></li>
+      <p class="anillo-texto aparece">Llegar a casa y que todo esté en su lugar. Para eso trabajamos con cinco compromisos que no cambian de un proyecto a otro, sea un baño o un apartamento entero.</p>
+      <ul class="compromisos-lista">
+        <li class="aparece"><span class="etiqueta">01</span>Puntualidad</li>
+        <li class="aparece"><span class="etiqueta">02</span>Confort</li>
+        <li class="aparece"><span class="etiqueta">03</span>Estilo</li>
+        <li class="aparece"><span class="etiqueta">04</span>A la medida de cualquier presupuesto</li>
+        <li class="aparece"><span class="etiqueta">05</span>Ideas frescas</li>
       </ul>
     </div>
   </section>
 
-  <!-- Proceso -->
-  <section class="hoja oscuro" id="proceso">
+  <!-- 3. Proyectos: colección en tarjetas escalonadas -->
+  <section class="hoja claro proyectos" id="proyectos">
     <div class="reticula">
-      <header class="seccion-cabeza">
-        <p class="etiqueta numero">04 — Cómo trabajamos</p>
-        <h2 class="titular">Antes de construir, lo <em>ves</em>.</h2>
-      </header>
-      <ol class="pasos">
-        <li class="aparece">
-          <figure><img src="assets/img/web/cocina-antes.jpg" width="640" height="520" alt="Foto real de una cocina antes de la remodelación, con gabinetes de madera y barra" loading="lazy"><figcaption class="etiqueta">Foto real · Así llega una cocina</figcaption></figure>
-          <p class="etiqueta acento">01 · Nos cuentas</p>
-          <h3 class="subtitulo">¿Qué espacio quieres renovar?</h3>
-          <p>Escríbenos por WhatsApp con una foto, la zona de Bogotá y lo que quieres invertir. Con eso te damos una idea de tiempos y costos.</p>
-        </li>
-        <li class="aparece">
-          <figure><img src="assets/img/web/sala-opcion-3-limpia.jpg" width="361" height="271" alt="Render de una sala con lámpara de anillos, techo con luz indirecta y mueble de televisión en madera" loading="lazy"><figcaption class="etiqueta">Render · Una de las opciones</figcaption></figure>
-          <p class="etiqueta acento">02 · Lo ves</p>
-          <h3 class="subtitulo">¿Cómo lo quieres sentir?</h3>
-          <p>Diseñamos tu espacio y te lo mostramos en render, con opciones, para que lo veas antes de construir y ajustemos juntos.</p>
-        </li>
-        <li class="aparece">
-          <figure><img src="assets/img/web/obra-equipo.jpg" width="640" height="640" alt="Foto real del equipo de EV DecoInteriorismo con uniforme instalando porcelanato en un apartamento" loading="lazy"><figcaption class="etiqueta">Foto real · Obra en curso</figcaption></figure>
-          <p class="etiqueta acento">03 · Lo entregamos</p>
-          <h3 class="subtitulo">¿Cuándo lo estrenas?</h3>
-          <p>Nuestro equipo construye lo que aprobaste, con la fecha que acordamos antes de empezar y dentro del presupuesto.</p>
-        </li>
+      <div class="proyectos-tope">
+        <p class="proyectos-intro">Te mostramos cómo llegó cada espacio y cómo va a quedar. Siempre te decimos qué es render y qué es foto real.</p>
+        <span class="filete" aria-hidden="true"></span>
+        <a class="boton boton-dorado" href="https://www.instagram.com/ev.decointeriorismo/" target="_blank" rel="noopener">Todos los proyectos<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha-diag"/></svg></span></a>
+      </div>
+
+      <div class="coleccion">
+        <article class="tarjeta t1 aparece">
+          <div class="comparar" data-comparar>
+            <img src="assets/img/web/antes-sala-tv.jpg" width="296" height="310" alt="Antes, foto real: sala con sofás azul oscuro, televisor de tubo y piso blanco" loading="lazy">
+            <img class="despues" src="assets/img/web/despues-sala-tv.jpg" width="296" height="310" alt="Después, render: sala abierta al comedor con sofá claro, butaca oliva y luz cálida" loading="lazy">
+            <span class="marca a">Antes · foto real</span><span class="marca d">Después · render</span>
+            <span class="tirador" aria-hidden="true"><svg viewBox="0 0 22 16"><path d="M7 3 2 8l5 5M15 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Mover el corte entre el antes y el después">
+          </div>
+          <div class="tarjeta-pie">
+            <h3>Sala comedor</h3>
+            <span class="etiqueta">Antes y después</span>
+          </div>
+        </article>
+
+        <h2 class="titular coleccion-titulo aparece">Espacios que ya <em>renovamos</em>.</h2>
+
+        <article class="tarjeta t2 aparece">
+          <img src="assets/img/web/loft-concreto.jpg" width="361" height="414" alt="Render de un loft de doble altura con muros de concreto, biblioteca en madera y sofá color arena" loading="lazy">
+          <div class="tarjeta-pie">
+            <h3>Loft de doble altura</h3>
+            <span class="etiqueta">Render</span>
+          </div>
+        </article>
+
+        <article class="tarjeta t3 aparece">
+          <img src="assets/img/web/sala-opcion-3-limpia.jpg" width="361" height="271" alt="Render de una sala con lámpara de anillos, techo con luz indirecta y mueble de televisión en madera" loading="lazy">
+          <div class="tarjeta-pie">
+            <h3>Sala con luz indirecta</h3>
+            <span class="etiqueta">Render</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Proceso: tres preguntas, una a la vez -->
+  <section class="oscuro proceso" id="proceso">
+    <div class="reticula proceso-cabeza">
+      <h2 class="titular grande aparece">Antes de construir, hacemos las preguntas <em>correctas</em>.</h2>
+    </div>
+    <div class="proceso-pista" data-proceso>
+      <div class="proceso-escena">
+        <ol class="pasos">
+          <li class="paso activo">
+            <div class="paso-pregunta"><p class="etiqueta">Nos cuentas</p><h3 class="subtitulo">¿Qué espacio quieres renovar?</h3></div>
+            <figure><img src="assets/img/web/cocina-antes.jpg" width="640" height="520" alt="Foto real de una cocina antes de la remodelación, con gabinetes de madera y barra" loading="lazy"><figcaption class="etiqueta">Foto real · Así llega una cocina</figcaption></figure>
+            <div class="paso-texto"><p>Escríbenos por WhatsApp con una foto, la zona de Bogotá y lo que quieres invertir. Con eso te damos una idea de tiempos y costos.</p><p class="cuenta"><b>1</b>/3</p></div>
+          </li>
+          <li class="paso">
+            <div class="paso-pregunta"><p class="etiqueta">Lo ves</p><h3 class="subtitulo">¿Cómo lo quieres sentir?</h3></div>
+            <figure><img src="assets/img/web/sala-opcion-3-limpia.jpg" width="361" height="271" alt="Render de una sala con lámpara de anillos y techo con luz indirecta" loading="lazy"><figcaption class="etiqueta">Render · Una de las opciones</figcaption></figure>
+            <div class="paso-texto"><p>Diseñamos tu espacio y te lo mostramos en render, con opciones, para que lo veas antes de construir y ajustemos juntos.</p><p class="cuenta"><b>2</b>/3</p></div>
+          </li>
+          <li class="paso">
+            <div class="paso-pregunta"><p class="etiqueta">Lo entregamos</p><h3 class="subtitulo">¿Cuándo lo estrenas?</h3></div>
+            <figure><img src="assets/img/web/obra-equipo.jpg" width="640" height="640" alt="Foto real del equipo de EV DecoInteriorismo con uniforme instalando porcelanato en un apartamento" loading="lazy"><figcaption class="etiqueta">Foto real · Obra en curso</figcaption></figure>
+            <div class="paso-texto"><p>Nuestro equipo construye lo que aprobaste, con la fecha que acordamos antes de empezar y dentro del presupuesto.</p><p class="cuenta"><b>3</b>/3</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Obra gris: titular, foto de obra y la tarjeta oscura -->
+  <section class="hoja claro obra" id="obra-gris">
+    <div class="reticula">
+      <h2 class="titular grande aparece">¿Te entregaron tu apartamento en obra <em>gris</em>?</h2>
+      <div class="obra-cuerpo">
+        <figure class="aparece">
+          <img src="assets/img/web/obra-equipo.jpg" width="640" height="640" alt="Foto real del equipo instalando porcelanato de 60 × 120 cm; la frase de la marca va impresa en la protección del piso" loading="lazy">
+          <figcaption class="etiqueta">Foto real · Obra en curso</figcaption>
+        </figure>
+        <aside class="obra-lado">
+          <span class="cota" data-medida aria-hidden="true"><span>Porcelanato 60 × 120 cm</span></span>
+          <div class="obra-tarjeta aparece">
+            <p class="etiqueta">De obra gris a hogar</p>
+            <p class="obra-frase">Recibes las llaves de un espacio sin acabados y nosotros lo terminamos contigo: pisos, paredes, cocina, baños e iluminación, con fecha de entrega desde el primer día.</p>
+            <a class="boton" href="https://wa.me/573204980360?text=Hola%2C%20me%20entregaron%20mi%20apartamento%20en%20obra%20gris." target="_blank" rel="noopener">Cuéntanos de tu apartamento<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha"/></svg></span></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Servicios: tarjeta a la izquierda que cambia con las flechas, imagen grande a la derecha -->
+  <section class="claro servicios" id="servicios" data-servicios>
+    <div class="servicios-texto">
+      <p class="etiqueta mas-marca">Servicios</p>
+      <h2 class="titular">A la medida de cualquier <em>presupuesto</em>.</h2>
+      <div class="servicio-tarjetas">
+        <article class="servicio activo">
+          <p class="etiqueta">01 / 06</p>
+          <h3 class="subtitulo">De obra gris a hogar</h3>
+          <ul><li>Pisos y paredes</li><li>Cocina y baños</li><li>Iluminación</li><li>Fecha de entrega desde el primer día</li></ul>
+        </article>
+        <article class="servicio">
+          <p class="etiqueta">02 / 06</p>
+          <h3 class="subtitulo">Diseño de espacios y renders</h3>
+          <ul><li>Tu proyecto en imágenes fotorrealistas</li><li>Opciones para elegir</li><li>Lo ves antes de construir</li></ul>
+        </article>
+        <article class="servicio">
+          <p class="etiqueta">03 / 06</p>
+          <h3 class="subtitulo">Remodelaciones</h3>
+          <ul><li>Cocinas</li><li>Baños</li><li>Pisos</li><li>Iluminación</li></ul>
+        </article>
+        <article class="servicio">
+          <p class="etiqueta">04 / 06</p>
+          <h3 class="subtitulo">Restauraciones</h3>
+          <ul><li>Devolverle la vida a lo que ya existe</li></ul>
+        </article>
+        <article class="servicio">
+          <p class="etiqueta">05 / 06</p>
+          <h3 class="subtitulo">Acabados</h3>
+          <ul><li>Revestimiento</li><li>Drywall</li><li>Pintura</li><li>Enchape</li></ul>
+        </article>
+        <article class="servicio">
+          <p class="etiqueta">06 / 06</p>
+          <h3 class="subtitulo">Asesorías</h3>
+          <ul><li>Te acompañamos a decidir antes de invertir</li></ul>
+        </article>
+      </div>
+      <div class="servicio-flechas">
+        <button type="button" class="flecha-boton" data-paso="-1" aria-label="Servicio anterior"><svg style="transform:scaleX(-1)"><use href="#flecha"/></svg></button>
+        <button type="button" class="flecha-boton" data-paso="1" aria-label="Servicio siguiente"><svg><use href="#flecha"/></svg></button>
+      </div>
+    </div>
+    <div class="servicios-imagen" aria-hidden="true">
+      <figure class="activo"><img src="assets/img/web/obra-equipo.jpg" alt="" loading="lazy"><figcaption class="etiqueta">Foto real · Obra en curso</figcaption></figure>
+      <figure><img src="assets/img/web/sala-cerros.jpg" alt="" loading="lazy"><figcaption class="etiqueta">Render · Sala con vista a la montaña</figcaption></figure>
+      <figure><img src="assets/img/web/cocina-antes.jpg" alt="" loading="lazy"><figcaption class="etiqueta">Foto real · Cocina antes de remodelar</figcaption></figure>
+      <figure><img src="assets/img/web/antes-sala-ventanal.jpg" alt="" loading="lazy"><figcaption class="etiqueta">Foto real · Sala antes de restaurar</figcaption></figure>
+      <figure><img src="assets/img/web/obra-equipo.jpg" alt="" loading="lazy" style="object-position:30% 70%"><figcaption class="etiqueta">Foto real · Porcelanato 60 × 120 cm</figcaption></figure>
+      <figure><img src="assets/img/web/despues-sala-tv.jpg" alt="" loading="lazy"><figcaption class="etiqueta">Render · Sala comedor</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 7. Acabados: titular centrado y la lista numerada -->
+  <section class="hoja oscuro acabados">
+    <div class="reticula">
+      <h2 class="titular grande centrado aparece">Acabados bien hechos, pieza por <em>pieza</em>.</h2>
+      <div class="acabados-fotos aparece">
+        <figure><img src="assets/img/web/obra-equipo.jpg" width="640" height="640" alt="Foto real de cajas de porcelanato de 60 × 120 cm listas para instalar" loading="lazy" style="object-position:40% 85%"></figure>
+        <figure><img src="assets/img/web/sala-opcion-3-limpia.jpg" width="361" height="271" alt="Render de un techo con luz indirecta y lámpara de anillos" loading="lazy" style="object-position:50% 0"></figure>
+        <figure><img src="assets/img/web/despues-sala-tv.jpg" width="296" height="310" alt="Render de una sala con enchape claro y luz cálida" loading="lazy"></figure>
+      </div>
+      <ol class="acabados-lista">
+        <li><span class="etiqueta">01</span><b>Porcelanato</b><span>60 × 120 cm</span></li>
+        <li><span class="etiqueta">02</span><b>Drywall</b><span>Muros y techos</span></li>
+        <li><span class="etiqueta">03</span><b>Pintura</b><span>El acabado final</span></li>
+        <li><span class="etiqueta">04</span><b>Enchape</b><span>Cocinas y baños</span></li>
+        <li><span class="etiqueta">05</span><b>Iluminación</b><span>Luz cálida e indirecta</span></li>
       </ol>
     </div>
   </section>
 
-  <!-- Preguntas -->
-  <section class="hoja claro" id="preguntas">
-    <div class="reticula preguntas-reticula">
-      <header class="seccion-cabeza">
-        <p class="etiqueta numero">05 — Preguntas</p>
-        <h2 class="titular">Lo que quieres saber antes de <em>empezar</em>.</h2>
-      </header>
+  <!-- 8. Preguntas -->
+  <section class="hoja oscuro preguntas-zona" id="preguntas">
+    <div class="reticula">
+      <h2 class="titular grande centrado aparece">Lo que debes saber antes de <em>empezar</em>.</h2>
       <div class="preguntas">
-        <details>
+        <details open>
           <summary>¿La cotización tiene costo?</summary>
           <p>No. Nos escribes por WhatsApp, nos cuentas de tu espacio y te enviamos la cotización sin costo.</p>
         </details>
@@ -224,31 +306,41 @@
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="hoja oscuro contacto" id="contacto">
-    <div class="reticula">
-      <p class="etiqueta acento">Cotización sin costo</p>
-      <h2 class="display">¿Qué espacio quieres <em>renovar</em>?</h2>
-      <span class="cota" aria-hidden="true"></span>
-      <div class="contacto-datos">
-        <a class="boton" href="https://wa.me/573204980360?text=Hola%2C%20quiero%20cotizar%20un%20espacio." target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha"/></svg></span></a>
-        <dl>
-          <div><dt class="etiqueta">WhatsApp</dt><dd><a href="https://wa.me/573204980360" target="_blank" rel="noopener">320 498 0360</a></dd></div>
-          <div><dt class="etiqueta">Instagram</dt><dd><a href="https://www.instagram.com/ev.decointeriorismo/" target="_blank" rel="noopener">@ev.decointeriorismo</a></dd></div>
-          <div><dt class="etiqueta">Dónde</dt><dd>Cedritos, Bogotá</dd></div>
-        </dl>
-      </div>
-    </div>
-  </section>
-
 </main>
 
-<footer class="pie">
-  <div class="reticula">
-    <svg class="logo" role="img" aria-label="EV DecoInteriorismo & Render Studio"><use href="#logo"/></svg>
-    <p class="pie-frase">Lo profesional cuesta menos de lo que <em>imaginas</em>.</p>
-    <p class="etiqueta pie-legal">© 2026 EV DecoInteriorismo &amp; Render Studio SAS · Bogotá</p>
-    <p class="etiqueta pie-legal">Propuesta de 16 Ball Creations · noviembre 2026 · <a href="marca/">Manual de marca</a></p>
+<!-- 9. Pie: la frase, tres columnas, el botón y la cinta de imágenes -->
+<footer class="pie" id="contacto">
+  <div class="reticula pie-arriba">
+    <div class="pie-frase">
+      <p class="titular">Lo profesional cuesta menos de lo que <em>imaginas</em>.</p>
+      <p class="pie-contacto"><a href="https://wa.me/573204980360" target="_blank" rel="noopener">320 498 0360</a><br><a href="https://www.instagram.com/ev.decointeriorismo/" target="_blank" rel="noopener">@ev.decointeriorismo</a></p>
+    </div>
+    <div class="pie-col">
+      <p class="etiqueta">Páginas</p>
+      <a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a><a href="#proceso">Proceso</a><a href="#servicios">Servicios</a><a href="#preguntas">Preguntas</a>
+    </div>
+    <div class="pie-col">
+      <p class="etiqueta">Conecta</p>
+      <a href="https://www.instagram.com/ev.decointeriorismo/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/573204980360" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="pie-col">
+      <p class="etiqueta">Visítanos</p>
+      <p>Cedritos<br>Bogotá, Colombia</p>
+      <a class="boton boton-dorado" href="https://wa.me/573204980360?text=Hola%2C%20quiero%20cotizar%20un%20espacio." target="_blank" rel="noopener">Cotiza sin costo<span class="boton-flecha" aria-hidden="true"><svg><use href="#flecha-diag"/></svg></span></a>
+    </div>
+  </div>
+
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-giro">
+      <span>Espacios renovados.</span><img src="assets/img/web/sala-cerros.jpg" alt=""><span>A <em>tiempo</em>.</span><img src="assets/img/web/loft-cuadro.jpg" alt=""><span>A tu medida.</span><img src="assets/img/web/despues-sala-tv.jpg" alt="">
+      <span>Espacios renovados.</span><img src="assets/img/web/sala-cerros.jpg" alt=""><span>A <em>tiempo</em>.</span><img src="assets/img/web/loft-cuadro.jpg" alt=""><span>A tu medida.</span><img src="assets/img/web/despues-sala-tv.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="reticula pie-abajo">
+    <svg class="monograma" aria-hidden="true"><use href="#monograma"/></svg>
+    <p class="etiqueta">© 2026 EV DecoInteriorismo &amp; Render Studio SAS · Bogotá</p>
+    <p class="etiqueta">Propuesta de 16 Ball Creations · noviembre 2026 · <a href="marca/">Manual de marca</a></p>
   </div>
 </footer>
 

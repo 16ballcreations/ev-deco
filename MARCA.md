@@ -1,6 +1,6 @@
 # EV DecoInteriorismo: identidad
 
-Propuesta de 16 Ball Creations, noviembre 2026. Versión 1.0. Base para la nueva página y
+Propuesta de 16 Ball Creations, noviembre 2026. Versión 1.1. Base para la nueva página y
 para todo lo que salga después (cotizaciones, redes, uniformes, papelería). Manual visual:
 `marca/index.html`. Si algo aquí y en el manual no coincide, manda este archivo.
 
@@ -62,6 +62,13 @@ mayúsculas gritadas y más de dos tipografías por pieza.
 - **Versiones:** sobre antracita (texto estuco, cota latón) · sobre estuco (texto
   antracita, cota latón) · reducida: solo «EV» con la cota debajo (es el sello) · sobre
   foto: solo con velo antracita al 60 % o sobre una zona limpia.
+- **Monograma en círculo** (v1.1): las dos iniciales del logo dorado del cliente dentro de
+  un círculo **cerrado** (el original lo dejaba abierto abajo con un destello). «E» y «V» en
+  Instrument Serif 400 (80 y 82 en una retícula de 120 × 120, la V montada sobre la E),
+  círculo de radio 56,5 y trazo 1,6. Un solo color plano: latón sobre estuco, latón pulido
+  sobre antracita (en tamaños pequeños el latón se apaga sobre oscuro). Sin degradado ni
+  destello. Uso: el menú de la página web (52 px; 44 px en móvil), el pie y el favicon.
+  Mínimo 28 px. Archivo: `assets/img/marca/monograma.svg`.
 - **Área de reserva:** ½ X por los cuatro lados; en impresos pequeños, mínimo 4 mm.
 - **Tamaños mínimos:** logotipo completo 160 px / 35 mm de ancho; reducida (sello) 24 px /
   8 mm.
@@ -248,10 +255,12 @@ el perfil de la marca (van en historias o en perfiles personales).
 - `assets/css/marca.css`: tokens de color, tipografía, retícula y la cota.
 - `assets/img/marca/logotipo.svg`: logotipo para fondo antracita.
 - `assets/img/marca/logotipo-claro.svg`: logotipo para fondo estuco.
-- `assets/img/marca/sello.svg`: sello (favicon, avatar, marca de agua).
+- `assets/img/marca/sello.svg`: sello (avatar, marca de agua).
+- `assets/img/marca/monograma.svg`: monograma EV en círculo (menú de la web y favicon).
 - `assets/img/marca/logo-actual.jpg`: referencia del logotipo tal como se usa hoy.
 - `assets/img/web/`: imágenes del Instagram del cliente usadas en el manual (renders y fotos reales, rotuladas).
 
 ## Cambios
 
 - v1.0 · noviembre 2026 · Primera versión (16 Ball Creations).
+- v1.1 · 6 nov 2026 · Monograma en círculo para el menú y el favicon. La página web sigue la estructura visual de la referencia (interior-st-wbs.framer.website) con las fuentes y colores de esta guía.
