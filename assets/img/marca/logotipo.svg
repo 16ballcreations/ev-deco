@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" role="img" aria-label="EV DecoInteriorismo &amp; Render Studio">
+  <style>@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500&amp;family=Instrument+Serif&amp;display=swap");</style>
+  <text x="0" y="132" font-family="Instrument Serif, Didot, Georgia, serif" font-size="168" letter-spacing="-14" textLength="158" lengthAdjust="spacingAndGlyphs" fill="#EEE7DF">EV</text>
+  <text x="190" y="72" font-family="Instrument Serif, Didot, Georgia, serif" font-size="58" textLength="404" lengthAdjust="spacingAndGlyphs" fill="#EEE7DF">DecoInteriorismo</text>
+  <g stroke="#A26F2A" stroke-width="1.5" fill="none"><path d="M192 96H592"/><path d="M188 100.5l8-9M588 100.5l8-9"/></g>
+  <text x="192" y="132" font-family="Instrument Sans, Helvetica, Arial, sans-serif" font-weight="500" font-size="15" textLength="236" lengthAdjust="spacing" fill="#EEE7DF" fill-opacity="0.8">&amp; RENDER STUDIO</text>
+</svg>

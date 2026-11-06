@@ -1,0 +1,93 @@
+/* EV DecoInteriorismo: tokens de marca (ver ../../MARCA.md) · v1.0 · noviembre 2026 */
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  /* Color: sale de la sala con vista a los cerros (render) y de la obra */
+  --antracita: #111317;   /* fondo, 55 % */
+  --estuco: #EEE7DF;      /* claro, 28 % */
+  --laton: #A26F2A;       /* acento: la cota, botones, la palabra que se inclina, 8 % */
+  --pulido: #C9974F;      /* latón pulido: texto de acento sobre antracita, 4 % */
+  --obra-gris: #66625C;   /* texto secundario y filetes sobre estuco, 3 % */
+  --oliva: #414222;       /* detalles menores: etiquetas sobre estuco, sellos de estado, 2 % */
+
+  /* Tipografía: una familia, dos voces */
+  --serif: "Instrument Serif", "Didot", "Bodoni 72", Georgia, serif;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --display: clamp(3.25rem, 8.5vw, 9rem);
+  --titular: clamp(2.25rem, 5vw, 4.5rem);
+  --subtitulo: clamp(1.5rem, 2.6vw, 2.25rem);
+  --texto: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --etiqueta: 0.75rem;
+
+  /* Retícula */
+  --ancho: 1440px;
+  --margen: clamp(16px, 4vw, 64px);
+  --canal: clamp(16px, 2vw, 32px);
+  --seccion: clamp(96px, 13vw, 200px);
+  --radio: 999px;          /* solo botones (píldora); fotos y tarjetas en ángulo recto */
+
+  /* La cota */
+  --cota: var(--laton);
+  --cota-grosor: 1px;
+  --cota-remate: 9px;      /* largo del remate oblicuo a 45° */
+  --cota-tiempo: 1.2s;
+  --cota-curva: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Voz grande: serif, con una sola palabra en itálica (la palabra que se inclina) */
+.display { font: 400 var(--display) / 0.92 var(--serif); letter-spacing: -0.02em; }
+.titular { font: 400 var(--titular) / 1 var(--serif); letter-spacing: -0.015em; }
+.display em, .titular em { font-style: italic; color: var(--laton); }
+
+/* Voz pequeña: sans en mayúsculas espaciadas */
+.etiqueta {
+  font: 500 var(--etiqueta) / 1.4 var(--sans);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* La cota: línea de medida con remates oblicuos. Se traza de izquierda a derecha al recibir .trazada */
+.cota {
+  position: relative;
+  display: block;
+  height: var(--cota-remate);
+  color: var(--cota);
+}
+.cota::before {                      /* la línea */
+  content: "";
+  position: absolute; left: 0; right: 0; top: 50%;
+  height: var(--cota-grosor);
+  background: currentColor;
+  transform: scaleX(0); transform-origin: left center;
+  transition: transform var(--cota-tiempo) var(--cota-curva);
+}
+.cota::after {                       /* los dos remates a 45° */
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(currentColor, currentColor) left center / var(--cota-grosor) 100% no-repeat,
+    linear-gradient(currentColor, currentColor) right center / var(--cota-grosor) 100% no-repeat;
+  transform: skewX(-45deg);
+  opacity: 0;
+  transition: opacity 0.3s ease calc(var(--cota-tiempo) - 0.2s);
+}
+.cota.trazada::before { transform: scaleX(1); }
+.cota.trazada::after { opacity: 1; }
+
+/* Cota con medida: el texto va centrado encima, en la voz pequeña */
+.cota[data-medida] { margin-top: 1.6em; }
+.cota[data-medida] > span {
+  position: absolute; left: 50%; bottom: calc(100% + 6px);
+  transform: translateX(-50%);
+  font: 500 var(--etiqueta) / 1 var(--sans); letter-spacing: 0.24em; text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0; transition: opacity 0.4s ease calc(var(--cota-tiempo) * 0.6);
+}
+.cota.trazada > span { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cota::before, .cota::after, .cota > span { transition: none; }
+  .cota::before { transform: scaleX(1); }
+  .cota::after, .cota > span { opacity: 1; }
+}

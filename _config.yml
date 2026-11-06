@@ -1,0 +1,7 @@
+# GitHub Pages: lo que vive en el repositorio pero no es parte del sitio.
+exclude:
+  - README.md
+  - MARCA.md
+  - AGENTS.md
+  - herramientas/
+  - referencias/

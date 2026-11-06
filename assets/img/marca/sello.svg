@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EV">
+  <style>@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;display=swap");</style>
+  <rect width="64" height="64" fill="#111317"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Instrument Serif, Didot, Georgia, serif" font-size="38" letter-spacing="-3" fill="#EEE7DF">EV</text>
+  <g stroke="#A26F2A" stroke-width="1.25" fill="none"><path d="M16 50H48"/><path d="M14 52.5l4-5M46 52.5l4-5"/></g>
+</svg>
