@@ -60,32 +60,41 @@ mayúsculas gritadas y más de dos tipografías por pieza.
   espaciadas. Proporción 600 × 160 (3,75 : 1).
 - **Unidad X:** la altura de la E del monograma.
 - **Versiones:** sobre antracita (texto estuco, cota latón) · sobre estuco (texto
-  antracita, cota latón) · reducida: solo «EV» con la cota debajo (es el sello) · sobre
-  foto: solo con velo antracita al 60 % o sobre una zona limpia.
-- **Monograma en círculo** (v1.1): las dos iniciales del logo dorado del cliente dentro de
-  un círculo **cerrado** (el original lo dejaba abierto abajo con un destello). «E» y «V» en
-  Instrument Serif 400 (80 y 82 en una retícula de 120 × 120, la V montada sobre la E),
-  círculo de radio 56,5 y trazo 1,6. Un solo color plano: latón sobre estuco, latón pulido
-  sobre antracita (en tamaños pequeños el latón se apaga sobre oscuro). Sin degradado ni
-  destello. Uso: el menú de la página web (52 px; 44 px en móvil), el pie y el favicon.
-  Mínimo 28 px. Archivo: `assets/img/marca/monograma.svg`.
+  antracita, cota latón) · sobre foto: solo con velo antracita al 60 % o sobre una zona
+  limpia · reducida: **el monograma en círculo** (ver «Monograma»).
+- **Dónde va el logotipo completo:** donde hay ancho: el pie de la página web, tarjetas,
+  cotizaciones, documentos, portadas. Donde no cabe (menú de la web, favicon, avatar,
+  firma, bordado, marca de agua), va el monograma.
 - **Área de reserva:** ½ X por los cuatro lados; en impresos pequeños, mínimo 4 mm.
-- **Tamaños mínimos:** logotipo completo 160 px / 35 mm de ancho; reducida (sello) 24 px /
-  8 mm.
+- **Tamaños mínimos:** logotipo completo 160 px / 35 mm de ancho; monograma 28 px / 8 mm
+  (solo el favicon baja a 16 px).
 - **Usos incorrectos:** dorado degradado o con brillo; contorno o sombra; estirar o
   rotar; cambiar la fuente del monograma; poner el logotipo sobre un render cargado sin
   velo; usar la cota en otro color que no sea latón; volver a montar el bloque viejo de
-  tres renglones con el descriptor.
+  tres renglones con el descriptor; abrir el círculo del monograma o volver a ponerle el
+  destello.
 - En imprenta, todo el texto del logotipo va en curvas (pendiente de entregar tras la
-  aprobación).
+  aprobación). El monograma ya está en curvas.
 
-## Sello
+## Monograma
 
-«EV» en Instrument Serif sobre antracita con una cota corta de latón debajo. Retícula de
-64 × 64: monograma a 38 de cuerpo, cota de x 16 a 48 a la altura 50. No se separa la cota
-del monograma. Usos: favicon (SVG + PNG 16, 32, 48 y 180), avatar de Instagram y WhatsApp
-(1080 px, cabe en el recorte circular), marca de agua en renders (esquina inferior
-derecha, 8 % del lado corto, 70 % de opacidad). Archivo: `assets/img/marca/sello.svg`.
+La versión reducida de la marca (v1.1; reemplaza al sello cuadrado de la v1.0). Sale del
+logo dorado que el cliente ya usa: las dos iniciales dentro de un círculo, que ahora
+**cierra** (el original lo dejaba abierto abajo con un destello).
+
+- **Construcción:** retícula de 120 × 120. Círculo de radio 56,5, trazo 1,6. «E» y «V» en
+  Instrument Serif 400, en curvas: la E a 80 de cuerpo y la V a 82, montada sobre la E.
+- **Color:** uno solo, plano. Latón sobre estuco o papel; latón pulido sobre antracita (a
+  tamaño pequeño el latón se apaga sobre oscuro). Sin degradado ni destello.
+- **Usos y tamaños:** menú de la página web (52 px; 44 px en móvil) · favicon (SVG; PNG de
+  32 y de 180 para iPhone, este último con fondo antracita) · avatar de Instagram y
+  WhatsApp (1080 px: disco antracita con el monograma en latón pulido, cabe en el recorte
+  circular) · firma de correo (PNG de 96 px mostrado a 48) · bordado del uniforme (latón
+  pulido, 8 cm) · marca de agua en renders (estuco al 70 %, esquina inferior derecha, 8 %
+  del lado corto).
+- **Mínimo:** 28 px / 8 mm; el favicon puede bajar a 16 px.
+- **Archivos:** `assets/img/marca/monograma.svg` (latón), `monograma-pulido.svg` (fondos
+  oscuros), `favicon-32.png`, `apple-touch-icon.png`, `monograma-96.png`.
 
 ## Color
 
@@ -168,7 +177,7 @@ Movimiento: se traza de izquierda a derecha una sola vez al entrar en pantalla, 
 `.trazada` en `assets/css/marca.css`; sin movimiento si el usuario lo pide.
 
 **Dónde sí:** bajo el titular de portada · encabezados de sección · entre el antes y el
-después · junto a cifras de tiempo o medida · el sello y el logotipo · portadas de
+después · junto a cifras de tiempo o medida · el logotipo completo · portadas de
 carrusel y de cotización.
 **Dónde no:** sobre caras o personas · como subrayado de enlaces · en vertical · apilada
 en varias líneas seguidas · en otro color · como borde de tarjetas.
@@ -262,12 +271,12 @@ el perfil de la marca (van en historias o en perfiles personales).
 - `assets/css/marca.css`: tokens de color (incluidos papel y latón profundo del tema claro), tipografía, retícula y la cota.
 - `assets/img/marca/logotipo.svg`: logotipo para fondo antracita.
 - `assets/img/marca/logotipo-claro.svg`: logotipo para fondo estuco.
-- `assets/img/marca/sello.svg`: sello (avatar, marca de agua).
-- `assets/img/marca/monograma.svg`: monograma EV en círculo (menú de la web y favicon).
+- `assets/img/marca/monograma.svg` y `monograma-pulido.svg`: monograma en círculo (menú de la web, favicon, avatar, firma, marca de agua).
+- `assets/img/marca/favicon-32.png`, `apple-touch-icon.png`, `monograma-96.png`: el monograma en PNG.
 - `assets/img/marca/logo-actual.jpg`: referencia del logotipo tal como se usa hoy.
 - `assets/img/web/`: imágenes del Instagram del cliente usadas en el manual (renders y fotos reales, rotuladas).
 
 ## Cambios
 
 - v1.0 · noviembre 2026 · Primera versión (16 Ball Creations).
-- v1.1 · 6 nov 2026 · Monograma en círculo para el menú y el favicon. La página web sigue la estructura visual de la referencia (interior-st-wbs.framer.website) con las fuentes y colores de esta guía. Páginas internas (proyectos con detalle, servicios, nosotros, ideas, contacto) y tema claro con papel y latón profundo.
+- v1.1 · 6 nov 2026 · El monograma en círculo reemplaza al sello como versión reducida (menú, favicon, avatar, firma, bordado, marca de agua); el logotipo completo va en el pie de la web. La página web sigue la estructura visual de la referencia (interior-st-wbs.framer.website) con las fuentes y colores de esta guía. Páginas internas (proyectos con detalle, servicios, nosotros, ideas, contacto) y tema claro con papel y latón profundo.

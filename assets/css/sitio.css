@@ -374,7 +374,8 @@ html:not(.js) .paso figure { transform: none; }
 @media (max-width: 600px) { .pie-col:nth-child(n) { grid-column: 1 / -1; } }
 
 .pie-abajo { margin-top: var(--seccion); padding-block: 32px 40px; row-gap: 12px; align-items: center; border-top: 1px solid rgb(var(--tinta-rgb) / 0.12); }
-.pie-abajo .monograma { color: var(--pulido); width: 48px; height: 48px; }
+/* Logotipo completo en el pie: el principal va donde hay ancho (ver MARCA.md) */
+.pie-abajo .logo { width: min(300px, 72vw); height: auto; aspect-ratio: 600 / 160; overflow: visible; margin-bottom: 12px; --l-texto: var(--estuco); --l-sub-op: 0.8; }
 .pie-abajo .etiqueta { color: rgb(var(--tinta-rgb) / 0.6); letter-spacing: 0.16em; }
 .pie-abajo a { color: var(--pulido); }
 

@@ -63,7 +63,7 @@ node herramientas/construir.mjs
 | `assets/css/marca.css` | Tokens de color, tipografía y la cota |
 | `assets/css/sitio.css` | Estilos de todas las páginas, con el tema claro |
 | `assets/js/sitio.js` | Cotas, apariciones, menú, comparador, proceso, servicios, formulario y tema |
-| `assets/img/marca/` | Logotipo, sello, monograma en círculo (en curvas) y el logo actual como referencia |
+| `assets/img/marca/` | Logotipo, monograma en círculo (SVG en curvas y PNG para favicon, iPhone y firma) y el logo actual como referencia |
 | `assets/img/web/` | Imágenes del Instagram del cliente, recortadas y rotuladas (render / foto real) |
 | `herramientas/servir.mjs` | Servidor local: `node herramientas/servir.mjs 4350` |
 
