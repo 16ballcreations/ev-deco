@@ -38,7 +38,7 @@ button { font: inherit; }
   --tinta-rgb: 248 245 240; --fondo-rgb: 17 19 23;
 }
 [data-tema="claro"] .claro .titular em, [data-tema="claro"] .claro .subtitulo em { color: var(--laton-profundo); }
-[data-tema="claro"] .portada-loft img, [data-tema="claro"] .portada-sala img { filter: saturate(1.05) brightness(1.04); }
+[data-tema="claro"] .portada-sala img { filter: saturate(1.05) brightness(1.04); }
 
 /* Botón del tema: un círculo con sol o luna */
 .tema {
@@ -145,14 +145,14 @@ figcaption { margin-top: 12px; }
 /* La imagen parte de la cota y se funde en el fondo, donde va la frase */
 .portada-loft { position: relative; width: calc(100% - 2 * var(--margen)); margin-top: -4px; }
 .portada-loft img {
-  width: 100%; height: clamp(300px, 46vw, 660px); object-fit: cover; object-position: 50% 45%;
+  width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover;
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 30%, rgb(0 0 0 / 0.32) 64%, transparent 90%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 30%, rgb(0 0 0 / 0.32) 64%, transparent 90%);
 }
 .portada-loft figcaption { position: absolute; top: 18px; left: 18px; margin: 0; padding: 7px 12px; border-radius: var(--radio); background: rgb(17 19 23 / 0.78); color: #EEE7DF; }
 .portada-frase {
   position: relative; z-index: 1; width: 100%; max-width: 1180px; padding: 0 var(--margen);
-  margin-top: clamp(-220px, -13vw, -72px);
+  margin-top: clamp(-220px, -13vw, -28px);
   display: grid; grid-template-columns: 56px minmax(0, 1fr) 56px; align-items: center; gap: 24px;
 }
 .frase { max-width: 22ch; margin: 0 auto; text-align: center; font: 400 clamp(1.75rem, 3.6vw, 3.25rem) / 1.08 var(--serif); letter-spacing: -0.01em; color: var(--estuco) !important; }
